@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Vichu's diary</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+              .header {
+  background-image: url('header3.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 120px;
+  padding: 20px;
+  text-align:left;
+}
+        h1{
+            color:black;
+        }
+        body {
+            /*background-image: url('wallpaper.jpg');*/
+            background:rgb(204, 204, 204);
+            margin: 0;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color:rgb(64, 153, 104);
+        }
+        .topnav a{
+            float: left;
+            display: block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration:wavy;
+        }
+        .dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+        .topnav a:hover, .dropdown:hover .dropbtn {
+            background-color:darkgreen;
+            color: black;
+        }
+        .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: darkgreen;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+        .topnav .search-container{
+            float:right;
+        }
+        img {
+            display: block;
+            border:5px solid #555;
+            width:50%;
+            height:auto;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        
+        .topnav input[type=text]{
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border:none;
+        }
+        .topnav .search-container button{
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        .topnav .search-container button:hover {
+            background: #ccc;
+        }
+        @media screen and (max-width: 600px) {
+            .topnav .search-container{
+                float: none;
+            }
+        .topnav a,.topnav input[type=text], .topnav .search-container button{
+            float: none;
+            display:block;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+        }
+        .topnav input[type=text] {
+            border: 1px solid #ccc;
+        }
+        }
+        * {
+  box-sizing: border-box;
+}
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+.column {
+  float: left;
+  width: 25%;
+}
+.column {
+  float: left;
+  width: 20%;
+}
+.content {
+  background-color: white;
+  padding: 10px;
+}
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.button {
+  border: none;
+  outline: 0;
+  height: 30px;
+  padding: 8px;
+  color: white;
+  background-color:rgb(22, 22, 109);
+  text-align: center;
+  cursor: pointer;
+  width: 20%;
+}
+.button:hover {
+  background-color: #555;
+}
+img{
+  height: 320px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1 style="font-style:oblique; opacity:inherit; color: lightcyan;"> Vichu's diary</h1>
+      </div>
+
+    <div class="topnav">
+        <a href="proekt.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="galery.html">Galery</a>
+        <div class="dropdown">
+            <button class="dropbtn">Favourites
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+            <a href="music.html">Music</a>
+            <a href="food.html">Food</a>
+            <a href="movies.html">Movies</a>
+          </div>
+        </div>
+        <a href="#">Blog</a>
+        <a href="anketa.html">Pool</a>
+        <a href="contact.html">Contact</a>
+        <div class="search-container">
+            <form metod="post" autocomplete="on">
+              <input type="text" placeholder="Search.." id="search">
+              <button type="submit" ><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+    </div>
+    <div class="row">
+        <div class="column">
+          <div class="content">
+            <img src="Ben.jpg" alt="Ben" style="width:100%">
+            <p>
+                <a href="thankyou.html">
+                  <button class="button">Like</button>
+                  </a>
+                  <form metod="post" autocomplete="off">
+                    <label>
+                        <input type="text" placeholder="Add a comment..."/>
+    
+                    </label>
+                  </form>
+              </p>
+          </div>
+        </div>
+        <div class="column">
+            <div class="content">
+              <img src="chupinja.jpeg" alt="Friends" style="width:100%">
+              <p>
+                  <a href="thankyou.html">
+                    <button class="button">Like</button>
+                    </a>
+                    <form metod="post" autocomplete="off">
+                      <label>
+                          <input type="text" placeholder="Add a comment..."/>
+      
+                      </label>
+                    </form>
+                </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="macici1.jpg" alt="Mac" style="width:100%">
+              <p>
+                  <a href="thankyou.html">
+                    <button class="button">Like</button>
+                    </a>
+                    <form metod="post" autocomplete="off">
+                      <label>
+                          <input type="text" placeholder="Add a comment..."/>
+      
+                      </label>
+                    </form>
+                </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="krusevo.jpg" alt="Krusevo" style="width:100%">
+              <p>
+                  <a href="thankyou.html">
+                    <button class="button">Like</button>
+                    </a>
+                    <form metod="post" autocomplete="off">
+                      <label>
+                          <input type="text" placeholder="Add a comment..."/>
+      
+                      </label>
+                    </form>
+                </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="mac.jpg" alt="Mac" style="width:100%">
+              <p>
+                  <a href="thankyou.html">
+                    <button class="button">Like</button>
+                    </a>
+                    <form metod="post" autocomplete="off">
+                      <label>
+                          <input type="text" placeholder="Add a comment..."/>
+      
+                      </label>
+                    </form>
+                </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="picture.jpg" alt="picture" style="width:100%">
+              <p>
+                  <a href="thankyou.html">
+                    <button class="button">Like</button>
+                    </a>
+                    <form metod="post" autocomplete="off">
+                      <label>
+                          <input type="text" placeholder="Add a comment..."/>
+      
+                      </label>
+                    </form>
+                </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="drive.jpeg" alt="drive" style="width:100%">
+              <p>
+                  <a href="thankyou.html">
+                    <button class="button">Like</button>
+                    </a>
+                    <form metod="post" autocomplete="off">
+                      <label>
+                          <input type="text" placeholder="Add a comment..."/>
+      
+                      </label>
+                    </form>
+                </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="vikii.jpeg" alt="Me" style="width:100%">
+              <p>
+                  <a href="thankyou.html">
+                    <button class="button">Like</button>
+                    </a>
+                    <form metod="post" autocomplete="off">
+                      <label>
+                          <input type="text" placeholder="Add a comment..."/>
+      
+                      </label>
+                    </form>
+                </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="woods.jpeg" alt="Nature" style="width:100%">
+              <p>
+                  <a href="thankyou.html">
+                    <button class="button">Like</button>
+                    </a>
+                    <form metod="post" autocomplete="off">
+                      <label>
+                          <input type="text" placeholder="Add a comment..."/>
+      
+                      </label>
+                    </form>
+                </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="friends.jpeg" alt="Friends" style="width:100%">
+              <p>
+                  <a href="thankyou.html">
+                    <button class="button">Like</button>
+                    </a>
+                    <form metod="post" autocomplete="off">
+                      <label>
+                          <input type="text" placeholder="Add a comment..."/>
+      
+                      </label>
+                    </form>
+                </p>
+            </div>
+          </div>
+          </div>
+
+</body>
+</html>

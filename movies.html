@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Vichu's diary</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+             .header {
+  background-image: url('header3.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 120px;
+  padding: 20px;
+  text-align:left;
+}
+        html {
+  box-sizing:border-box;
+
+}
+*, *:before, *:after {
+  box-sizing:inherit;
+  
+}
+        h1{
+            color:black;
+        }
+        body {
+            /*background-image: url('wallpaper.jpg');*/
+            background:rgb(204, 204, 204);
+            margin: 0;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color:rgb(64, 153, 104);
+        }
+        .topnav a{
+            float: left;
+            display: block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration:wavy;
+        }
+        .dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+        .topnav a:hover, .dropdown:hover .dropbtn {
+            background-color:darkgreen;
+            color: black;
+        }
+        .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: darkgreen;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+        .topnav .search-container{
+            float:right;
+        }
+        .column {
+  float: left;
+  width: 25%;
+  height:400px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    /*height: 200px;*/
+    display: block;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.container {
+  padding: 0 16px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+        
+        .topnav input[type=text]{
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border:none;
+        }
+        .topnav .search-container button{
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        .topnav .search-container button:hover {
+            background: #ccc;
+        }
+        @media screen and (max-width: 600px) {
+            .topnav .search-container{
+                float: none;
+            }
+        .topnav a,.topnav input[type=text], .topnav .search-container button{
+            float: none;
+            display:block;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+        }
+        .topnav input[type=text] {
+            border: 1px solid #ccc;
+        }
+        }
+        .button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+.title {
+  color: grey;
+}
+img{
+  height: 400px;
+}
+  
+    </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1 style="font-style:oblique; opacity:inherit; color: lightcyan;"> Vichu's diary</h1>
+  </div>
+    
+
+    <div class="topnav">
+        <a href="proekt.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="galery.html">Galery</a>
+        <div class="dropdown">
+          <button class="dropbtn">Favourites
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+          <a href="music.html">Music</a>
+          <a href="food.html">Food</a>
+          <a href="movies.html">Movies</a>
+        </div>
+      </div>
+        <a href="blog.html">Blog</a>
+        <a href="anketa.html">Poll</a>
+        <a href="contact.html">Contact</a>
+        <div class="search-container">
+            <form metod="post" autocomplete="on">
+              <input type="text" placeholder="Search.." id="search">
+              <button type="submit" ><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+    </div>
+    <p> </p><br>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            
+            <img  src="message in a bottle.jpg" alt="Message in a bottle" style="width:100%">
+              <div class="container">
+              <h2>Message in a bottle</h2>
+              <p class="title">1999 ‧ Romance/Drama ‧ 2h 11m</p>
+              <p>A woman finds a romantic letter in a bottle washed ashore and tracks down its author, a widower. Gradually, she falls in love with him when she learns that he has been writing to his deceased wife</p>
+              <p class="title">Story by: Nicholas Sparks</p>
+              <p>
+                <a href="https://www.youtube.com/watch?v=Ur9xLzOJNIs">
+                  <button class="button">Trailer</button>
+                
+                </a>
+              </p>
+          
+            </div>
+          </div>
+        </div>
+          <div class="column">
+            <div class="card">
+              
+              <img src="Rocky Balboa.jpg" alt="Rocky Balboa" style="width:100%">
+                <div class="container">
+                <h2>Rocky Balboa</h2>
+                <p class="title">2006 ‧ Sport/Romance ‧ 1h 42m</p>
+                <p>A retired Rocky Balboa wins against reigning champion Mason Dixon in a computer simulation of a fight. Enraged by this, Mason challenges Rocky to a 10-round exhibition bout.</p>
+                <p> </p> <br> 
+                <p>
+                  <a href="https://www.youtube.com/watch?v=8tab8fK2_3w">
+                    <button class="button">Trailer</button>
+                  
+                  </a>
+                </p>
+            
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              
+              <img src="lassie.jpg" alt="Lassie" style="width:100%">
+                <div class="container">
+                <h2>Lassiea</h2>
+                <p class="title">1994 ‧ Family/Drama ‧ 1h 35m</p>
+                <p>Teenager Matt feels lost in his new surroundings after his family relocates to the country side. Lassie, a homeless dog, becomes a part of their lives.</p>
+                <p> </p> <br> <br>
+                <p>
+                  <a href="https://www.youtube.com/watch?v=ynCqco_hASw">
+                    <button class="button">Trailer</button>
+                  
+                  </a>
+                </p>
+            
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              
+              <img src="breakfast at Tiffany's.jpg" alt="Breakfast at Tiffany's" style="width:100%">
+                <div class="container">
+                <h2>Breakfast at Tiffany's</h2>
+                <p class="title">1961 ‧ Romance/Drama ‧ 1h 55m</p>
+                <p>Paul is a struggling writer who recently moves into a new apartment in New York. When he meets Holly, an eccentric but beautiful socialite, he hopelessly falls in love with her.</p>
+                <p> </p> <br>
+                <p>
+                  <a href="https://www.youtube.com/watch?v=hQ_O15kYlCI">
+                    <button class="button">Trailer</button>
+                  
+                  </a>
+                </p>
+            
+              </div>
+            </div>
+          </div>
+    </div>
+    <p> </p><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <div class="row">
+          <div class="column">
+            <div class="card">
+              
+              <img src="escape plan.jpg" alt="Escape Plan" style="width:100%">
+                <div class="container">
+                <h2>Escape Plan</h2>
+                <p class="title">2013 ‧ Action/Thriller ‧ 1h 56m</p>
+                <p>Ray, an expert in security systems, is framed for a crime and sent to a high-tech prison. However, he uses all his knowledge and special skills with a little inside help to escape the facility.</p>
+                
+                <p>
+                  <a href="https://www.youtube.com/watch?v=CI4EjV_x_PQ">
+                    <button class="button">Trailer</button>
+                  
+                  </a>
+                </p>
+            
+              </div>
+            </div>
+          </div>
+      
+      
+      </div>
+</body>
+</html>
