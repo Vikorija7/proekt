@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Vichu's diary</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <style>
               .header {
   background-image: url('header3.jpg');
@@ -16,68 +17,126 @@
         h1{
             color:black;
         }
-        body {
-            /*background-image: url('wallpaper.jpg');*/
-            background:rgb(204, 204, 204);
-            margin: 0;
-        }
+        .header {
+    
+    background-repeat: no-repeat;
+    background-size: 100% 50px;
+    height: 70px;
+    background:rgb(204, 204, 204);
+    padding: 10px;
+    text-align:right;
+    margin-right: 150px;
+  }
+  
+          body {
+            
+             background:rgb(204, 204, 204);
+              margin: 0;
+              
+              
+          }
+          
+          .topnav {
+              overflow: hidden;
+              /*background-color:rgb(64, 153, 104);*/
+          }
+          .topnav a{
+              float: left;
+              display: block;
+              color: rgb(82, 79, 79);
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration:wavy;
+          }
+          .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: rgb(82, 79, 79);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+          .topnav a:hover, .dropdown:hover .dropbtn {
+             /* background-color:darkgreen;*/
+              color: black;
+          }
+          .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(204, 204, 204);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+          .topnav .search-container{
+              float:right;
+          }
+          /*img {
+              display: block;
+              border:5px solid #555;
+              width:60%;
+              height:600px;
+              margin-left:auto;
+              margin-right:auto;
+          }*/
+          
+          .topnav input[type=text]{
+              padding: 6px;
+              margin-top: 8px;
+              font-size: 17px;
+              border:none;
+          }
+          .topnav .search-container button{
+              float: right;
+              padding: 6px 10px;
+              margin-top: 8px;
+              margin-right: 16px;
+              background: rgb(204, 204, 204);
+              font-size: 17px;
+              border: none;
+              cursor: pointer;
+          }
+          .topnav .search-container button:hover {
+              background: #ccc;
+          }
+          @media screen and (max-width: 600px) {
+              .topnav .search-container{
+                  float: none;
+              }
+          .topnav a,.topnav input[type=text], .topnav .search-container button{
+              float: none;
+              display:block;
+              text-align: left;
+              width: 100%;
+              margin: 0;
+              padding: 14px;
+          }
+          .topnav input[type=text] {
+              border: 1px solid #ccc;
+          }
+          }
         
-        .topnav {
-            overflow: hidden;
-            background-color:rgb(64, 153, 104);
-        }
-        .topnav a{
-            float: left;
-            display: block;
-            color:white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration:wavy;
-        }
-        .dropdown {
-  float: left;
-  overflow: hidden;
-}
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-        .topnav a:hover, .dropdown:hover .dropbtn {
-            background-color:darkgreen;
-            color: black;
-        }
-        .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: darkgreen;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-        .topnav .search-container{
-            float:right;
-        }
         img {
             display: block;
             border:5px solid #555;
@@ -87,41 +146,7 @@
             margin-right:auto;
         }
         
-        .topnav input[type=text]{
-            padding: 6px;
-            margin-top: 8px;
-            font-size: 17px;
-            border:none;
-        }
-        .topnav .search-container button{
-            float: right;
-            padding: 6px 10px;
-            margin-top: 8px;
-            margin-right: 16px;
-            background: #ddd;
-            font-size: 17px;
-            border: none;
-            cursor: pointer;
-        }
-        .topnav .search-container button:hover {
-            background: #ccc;
-        }
-        @media screen and (max-width: 600px) {
-            .topnav .search-container{
-                float: none;
-            }
-        .topnav a,.topnav input[type=text], .topnav .search-container button{
-            float: none;
-            display:block;
-            text-align: left;
-            width: 100%;
-            margin: 0;
-            padding: 14px;
-        }
-        .topnav input[type=text] {
-            border: 1px solid #ccc;
-        }
-        }
+        
         * {
   box-sizing: border-box;
 }
@@ -159,7 +184,7 @@
     width: 100%;
   }
 }
-.button {
+/*.button {
   border: none;
   outline: 0;
   height: 30px;
@@ -170,18 +195,149 @@
   cursor: pointer;
   width: 20%;
 }
+
 .button:hover {
   background-color: #555;
-}
+}*/
+
 img{
   height: 320px;
 }
+/* ova e za lajkovite*/
+/*.column .content img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10px;
+}*/
+.column .content .voting{
+    position:relative;
+    /*border: 3px solid #303030;
+    border-radius: 4px;*/
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.column .content .voting input{
+    width: 50px;
+    border:none;
+    background:none;
+    color: #919191;
+    font-size:30px;
+    margin:0 10px;
+    pointer-events: none;
+}
+.column .content .voting button{
+    color:salmon;
+    background:none;
+    border:none;
+    font-size: 30px;
+    padding: 0 15px;
+    margin: 10px 0;
+    margin-left:20px;
+    cursor: pointer;
+}
+.column .content .voting button:active{
+    color:red;
+    transform: scale(1.2);
+}
+/*ova e za komentarot
+* {
+  margin: 0;
+  border: 0; 
+  outline: 0;
+  list-style: none; 
+  user-select: none;
+  }
+  .container {
+position: relative; 
+margin-top: 20px; 
+background: grey; 
+width: 250px; 
+height:80px; 
+padding: 20px 0; 
+text-align: center; 
+border-radius: 20px; 
+overflow: hidden; 
+z-index: 2;
+margin-left: 38%;
+}
+ 
+.container input, container button { 
+height: 20px; 
+width: 90%; 
+border-radius: 50px; 
+font-size: 15px;
+}*/
+.container input {
+/*border: 2px solid grey; 
+padding-left: 12px;
+margin-bottom: 12px; */
+transition: .4s;
+}
+ 
+.container input:focus { border: 2px solid #00bcd4; }
+ 
+.container button {
+Cursor: pointer; 
+/*background:solid white; 
+letter-spacing: 1px; */
+transition: .4s;
+/*font-family: Arial, Helvetica, sans-serif;*/
+
+}
+ 
+/*.container button:hover { background: #FF8427; }*/
+ 
+ul {
+/*position: absolute; 
+width: 250px; 
+height: fit-content; 
+background: grey; 
+margin-top: 40px; 
+padding-top: 20px; 
+border-radius: 20px; */
+transition: .4s;
+/*margin-left: 36%;*/
+}
+ 
+ul li { padding: 15px; }
+ 
+ul li span { display: flex; }
+ 
+ul li span p:nth-child(1) { 
+text-transform: uppercase; 
+font-size: 20px;
+font-weight: 500; 
+color: #ffffff; 
+margin-right: 10px;
+}
+ 
+ul li span p:nth-child(2) { 
+color: #ffffff;
+font-size: 18px; 
+font-weight: 200; 
+margin-top: -3px;
+}
+ 
+ul li p:nth-child(2) { 
+color: #f5f5f5; 
+font-size: 19px; 
+font-weight: 400; 
+padding-top: 5px;
+}*/
+form{
+    padding: auto;
+    
+}
+
+
     </style>
 </head>
 <body>
 
     <div class="header">
-        <h1 style="font-style:oblique; opacity:inherit; color: lightcyan;"> Vichu's diary</h1>
+        <h1 style="font-style:oblique; opacity:inherit; color:  rgb(1, 161, 1);"> Vichi's diary</h1>
       </div>
 
     <div class="topnav">
@@ -198,7 +354,7 @@ img{
             <a href="movies.html">Movies</a>
           </div>
         </div>
-        <a href="#">Blog</a>
+        <a href="blog.html">Blog</a>
         <a href="anketa.html">Pool</a>
         <a href="contact.html">Contact</a>
         <div class="search-container">
@@ -213,163 +369,274 @@ img{
           <div class="content">
             <img src="Ben.jpg" alt="Ben" style="width:100%">
             <p>
-                <a href="thankyou.html">
-                  <button class="button">Like</button>
-                  </a>
-                  <form metod="post" autocomplete="off">
-                    <label>
-                        <input type="text" placeholder="Add a comment..."/>
-    
-                    </label>
-                  </form>
+              <div class="voting">
+                <button id="likebtn1">
+                    <i class="fa fa-heart"></i>
+                </button>
+                <input type="number" id="input11" value=0 name="">
+                
+                <button id="dislikebtn1">
+                    <i class="fas fa-heart-broken icon"></i>
+                </button>
+                <input type="number" id="input21" value=0 name="">
+                
+                        </div>
               </p>
+              <div class="container">
+                <input type="text" placeholder="Enter your name" id="name">
+                <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment"> 
+                <button onclick="add()">Comment</button>
+                </div>
+                <ul class="list"> </ul>
+            </div>
           </div>
-        </div>
         <div class="column">
             <div class="content">
               <img src="chupinja.jpeg" alt="Friends" style="width:100%">
               <p>
-                  <a href="thankyou.html">
-                    <button class="button">Like</button>
-                    </a>
-                    <form metod="post" autocomplete="off">
-                      <label>
-                          <input type="text" placeholder="Add a comment..."/>
-      
-                      </label>
-                    </form>
+                <div class="voting">
+                  <button id="likebtn2">
+                      <i class="fa fa-heart"></i>
+                  </button>
+                  <input type="number" id="input12" value=0 name="">
+                  
+                  <button id="dislikebtn2">
+                      <i class="fas fa-heart-broken icon"></i>
+                  </button>
+                  <input type="number" id="input22" value=0 name="">
+                  
+                          </div>
                 </p>
+                
+                <div class="container">
+                  <input type="text" placeholder="Enter your name" id="name1">
+                  <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment1"> 
+                  <button onclick="add1()">Comment</button>
+                  </div>
+                  <ul class="list1"> </ul>
+                  
+              </div>
             </div>
-          </div>
+           
           <div class="column">
             <div class="content">
               <img src="macici1.jpg" alt="Mac" style="width:100%">
               <p>
-                  <a href="thankyou.html">
-                    <button class="button">Like</button>
-                    </a>
-                    <form metod="post" autocomplete="off">
-                      <label>
-                          <input type="text" placeholder="Add a comment..."/>
-      
-                      </label>
-                    </form>
+                <div class="voting">
+                  <button id="likebtn3">
+                      <i class="fa fa-heart"></i>
+                  </button>
+                  <input type="number" id="input13" value=0 name="">
+                  
+                  <button id="dislikebtn3">
+                      <i class="fas fa-heart-broken icon"></i>
+                  </button>
+                  <input type="number" id="input23" value=0 name="">
+                  
+                          </div>
                 </p>
+                <div class="container">
+                  <input type="text" placeholder="Enter your name" id="name2">
+                  <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment2"> 
+                  <button onclick="add2()">Comment</button>
+                  </div>
+                  <ul class="list2"> </ul>
             </div>
           </div>
           <div class="column">
             <div class="content">
               <img src="krusevo.jpg" alt="Krusevo" style="width:100%">
               <p>
-                  <a href="thankyou.html">
-                    <button class="button">Like</button>
-                    </a>
-                    <form metod="post" autocomplete="off">
-                      <label>
-                          <input type="text" placeholder="Add a comment..."/>
-      
-                      </label>
-                    </form>
+                <div class="voting">
+                  <button id="likebtn4">
+                      <i class="fa fa-heart"></i>
+                  </button>
+                  <input type="number" id="input14" value=0 name="">
+                  
+                  <button id="dislikebtn4">
+                      <i class="fas fa-heart-broken icon"></i>
+                  </button>
+                  <input type="number" id="input24" value=0 name="">
+                  
+                          </div>
                 </p>
+                <div class="container">
+                  <input type="text" placeholder="Enter your name" id="name3">
+                  <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment3"> 
+                  <button onclick="add3()">Comment</button>
+                  </div>
+                  <ul class="list3"> </ul>
+                
             </div>
           </div>
           <div class="column">
             <div class="content">
               <img src="mac.jpg" alt="Mac" style="width:100%">
               <p>
-                  <a href="thankyou.html">
-                    <button class="button">Like</button>
-                    </a>
-                    <form metod="post" autocomplete="off">
-                      <label>
-                          <input type="text" placeholder="Add a comment..."/>
-      
-                      </label>
-                    </form>
+                <div class="voting">
+                  <button id="likebtn5">
+                      <i class="fa fa-heart"></i>
+                  </button>
+                  <input type="number" id="input15" value=0 name="">
+                  
+                  <button id="dislikebtn5">
+                      <i class="fas fa-heart-broken icon"></i>
+                  </button>
+                  <input type="number" id="input25" value=0 name="">
+                  
+                          </div>
                 </p>
+                <div class="container">
+                  <input type="text" placeholder="Enter your name" id="name4">
+                  <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment4"> 
+                  <button onclick="add4()">Comment</button>
+                  </div>
+                  <ul class="list4"> </ul>
             </div>
           </div>
+        </div>
+        <div class="row">
           <div class="column">
             <div class="content">
               <img src="picture.jpg" alt="picture" style="width:100%">
               <p>
-                  <a href="thankyou.html">
-                    <button class="button">Like</button>
-                    </a>
-                    <form metod="post" autocomplete="off">
-                      <label>
-                          <input type="text" placeholder="Add a comment..."/>
-      
-                      </label>
-                    </form>
+                <div class="voting">
+                  <button id="likebtn6">
+                      <i class="fa fa-heart"></i>
+                  </button>
+                  <input type="number" id="input16" value=0 name="">
+                  
+                  <button id="dislikebtn6">
+                      <i class="fas fa-heart-broken icon"></i>
+                  </button>
+                  <input type="number" id="input26" value=0 name="">
+                  
+                          </div>
                 </p>
+                <div class="container">
+                  <input type="text" placeholder="Enter your name" id="name5">
+                  <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment5"> 
+                  <button onclick="add5()">Comment</button>
+                  </div>
+                  <ul class="list5">  </ul>
             </div>
           </div>
           <div class="column">
             <div class="content">
               <img src="drive.jpeg" alt="drive" style="width:100%">
               <p>
-                  <a href="thankyou.html">
-                    <button class="button">Like</button>
-                    </a>
-                    <form metod="post" autocomplete="off">
-                      <label>
-                          <input type="text" placeholder="Add a comment..."/>
-      
-                      </label>
-                    </form>
+                <div class="voting">
+                  <button id="likebtn7">
+                      <i class="fa fa-heart"></i>
+                  </button>
+                  <input type="number" id="input17" value=0 name="">
+                  
+                  <button id="dislikebtn7">
+                      <i class="fas fa-heart-broken icon"></i>
+                  </button>
+                  <input type="number" id="input27" value=0 name="">
+                  
+                          </div>
                 </p>
+                <div class="container">
+                  <input type="text" placeholder="Enter your name" id="name6">
+                  <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment6"> 
+                  <button onclick="add6()">Comment</button>
+                  </div>
+                  <ul class="list6"> </ul>
             </div>
           </div>
           <div class="column">
             <div class="content">
               <img src="vikii.jpeg" alt="Me" style="width:100%">
               <p>
-                  <a href="thankyou.html">
-                    <button class="button">Like</button>
-                    </a>
-                    <form metod="post" autocomplete="off">
-                      <label>
-                          <input type="text" placeholder="Add a comment..."/>
-      
-                      </label>
-                    </form>
-                </p>
+                <div class="voting">
+                  <button id="likebtn8">
+                      <i class="fa fa-heart"></i>
+                  </button>
+                  <input type="number" id="input18" value=0 name="">
+                  
+                  <button id="dislikebtn8">
+                      <i class="fas fa-heart-broken icon"></i>
+                  </button>
+                  <input type="number" id="input28" value=0 name="">
+                  
+                          </div>
+                        </p>
+                          <div class="container">
+                            <input type="text" placeholder="Enter your name" id="name7">
+                            <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment7"> 
+                            <button onclick="add7()">Comment</button>
+                            </div>
+                            <ul class="list7"> </ul>
+                
             </div>
           </div>
           <div class="column">
             <div class="content">
               <img src="woods.jpeg" alt="Nature" style="width:100%">
               <p>
-                  <a href="thankyou.html">
-                    <button class="button">Like</button>
-                    </a>
-                    <form metod="post" autocomplete="off">
-                      <label>
-                          <input type="text" placeholder="Add a comment..."/>
-      
-                      </label>
-                    </form>
+                <div class="voting">
+                  <button id="likebtn9">
+                      <i class="fa fa-heart"></i>
+                  </button>
+                  <input type="number" id="input19" value=0 name="">
+                  
+                  <button id="dislikebtn9">
+                      <i class="fas fa-heart-broken icon"></i>
+                  </button>
+                  <input type="number" id="input29" value=0 name="">
+                  
+                          </div>
                 </p>
+                <div class="container">
+                  <input type="text" placeholder="Enter your name" id="name8">
+                  <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment8"> 
+                  <button onclick="add8()">Comment</button>
+                  </div>
+                  <ul class="list8"> </ul>
             </div>
           </div>
           <div class="column">
             <div class="content">
-              <img src="friends.jpeg" alt="Friends" style="width:100%">
+              <img src="friends.jpeg" alt="Friends" id="friends" style="width:100%">
               <p>
-                  <a href="thankyou.html">
-                    <button class="button">Like</button>
-                    </a>
-                    <form metod="post" autocomplete="off">
-                      <label>
-                          <input type="text" placeholder="Add a comment..."/>
-      
-                      </label>
-                    </form>
+                <div class="voting">
+                  <button id="likebtn10">
+                      <i class="fa fa-heart"></i>
+                  </button>
+                  <input type="number" id="input110" value=0 name="">
+                  
+                  <button id="dislikebtn10">
+                      <i class="fas fa-heart-broken icon"></i>
+                  </button>
+                  <input type="number" id="input210" value=0 name="">
+                  
+                          </div>
                 </p>
+                <div class="container">
+                  <input type="text" placeholder="Enter your name" id="name9">
+                  <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment9"> 
+                  <button onclick="add9()">Comment</button>
+                  </div>
+                  <ul class="list9"> </ul>
             </div>
           </div>
           </div>
+        
+          <script src="java.js" ></script>
+          <script src="komentariiii.js"></script>
+          <script src="kom2.js"></script>
+          <script src="kom3.js"></script>
+          <script src="kom4.js"></script>
+          <script src="kom5.js"></script>
+          <script src="kom6.js"></script>
+          <script src="kom7.js"></script>
+          <script src="kom8.js"></script>
+          <script src="kom9.js"></script>
+          <script src="kom10.js"></script>
+          
+          
 
 </body>
 </html>

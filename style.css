@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset = "utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Vichu's diary</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
- 
-</head>
-<style>
-  .header {
+.header {
     /*background-image: url('header3.jpg');
     background-repeat: no-repeat;*/
     background-size: 100% 50px;
@@ -128,55 +117,38 @@
               border: 1px solid #ccc;
           }
           }
-          h1{
-            color:black;
-        }
+          /* ova e za slikata so button*/
+          .container {
+            position: relative;
+            width: 100%;
+
+          }
+          
+          .container img {
+            width: 100%;
+            height: 750px;
+          }
+          
+          .container .btn {
+            position: absolute;
+            top: 70%;
+            left: 19%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: rgb(1, 112, 1);
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+          }
+          
+          .container .btn:hover {
+            background-color: darkgreen;
+          }
+          
        
-       p{
-            margin-left:50px;
-            
-        }
-</style>
-<body>
-
-  <div class="header">
-    <h1 style="font-style:oblique; opacity:inherit; color: rgb(1, 161, 1);"> Vichi's diary</h1>
-  </div>
-  <div class="topnav">
-    <a href="proekt.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="galery.html">Galery</a>
-    <div class="dropdown">
-      <button class="dropbtn">Favourites
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-      <a href="music.html">Music</a>
-      <a href="food.html">Food</a>
-      <a href="movies.html">Movies</a>
-    </div>
-  </div>
-    <a href="#">Blog</a>
-    <a href="anketa.html">Poll</a>
-    <a href="contact.html">Contact</a>
-    <div class="search-container">
-        <form metod="post" autocomplete="on">
-          <input type="text" placeholder="Search.." id="search">
-          <button type="submit" ><i class="fa fa-search"></i></button>
-        </form>
-      </div>
-</div>
-<p> </p>
-<p>
-    
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/bkWevngKTcw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XrqrpMFxMo8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-    
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/fvQpnkIJ4ww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-  </p>
-
-    </body>
-    </html>
+        
+         
