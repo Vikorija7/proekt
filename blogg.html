@@ -298,6 +298,9 @@ ul li span p:nth-child(2) {
             #search{
               margin-right: 20px;
             }
+            .pom{
+                background-color: rgb(82, 166, 199);
+            }
    
     </style>
 </head>
@@ -347,16 +350,15 @@ ul li span p:nth-child(2) {
 <label>
 
 <div class="container">
-  <input type="text" placeholder="Enter your name" id="name">
-  <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment"> 
-  <button onclick="add()">Comment</button>
-  <button onclick="location.reload()">Clear</button>
+    <input class="komentar" id = "com11" type="text" placeholder="Enter a comment"/>
+    <button class="pom" id="postbtn11">Comment</button>
   </div>
-  <ul class="list"></ul>
+  <ul id="komentari11"></ul>
 </label>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src=blogjs.js></script>
   <script src="script.js"></script> 
     <script src="highlight2.js" ></script>
+    <script src="kom1.js" ></script>
 </body>
 </html>

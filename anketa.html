@@ -7,12 +7,14 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
 
-        h2{
+       /* h2{
             text-align: center;
             text-decoration: underline ;
-            color:black;
+            color:rgb(39, 35, 35);
             font-size: 30px;
-        }
+            font-style: italic;
+            text-shadow:rgb(59, 56, 56);
+        }*/
         h1{
             color:black;
         }
@@ -64,7 +66,7 @@
     margin: 0;
   }
           .topnav a:hover, .dropdown:hover .dropbtn {
-             /* background-color:darkgreen;*/
+            background-color:#ddd;
               color: black;
           }
           .dropdown-content {
@@ -130,18 +132,37 @@
               border: 1px solid #ccc;
           }
           }
-        
+        .forma{
+            background-color: rgb(183, 189, 136);
+            margin-left: 400px;
+            
+            
+            position:absolute;
+  width:500px;
+  padding: 10px;
+  border: 1px solid gray;
+  box-shadow: 0 5px 19px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  
+            text-align:center
+        }
        
         p{
-            margin-left: 30px;
+            text-align: center;
+            font-style: italic;
         }
+        .input{
+            border-radius: 7px;
+            color:rgb(146, 143, 143);
+        }
+        
   
     </style>
     </head>
     <body>
     
         <div class="header">
-            <h1 style="font-style:oblique; opacity:inherit; color: rgb(1, 161, 1);"> Vichi's diary</h1>
+            <h1 style="font-style:oblique; opacity:inherit; color: rgb(111, 116, 111);"> Vichi's diary</h1>
           </div>
     
         <div class="topnav">
@@ -159,43 +180,40 @@
               </div>
             </div>
             <a href="blog.html">Blog</a>
-            <a href="anketa.html">Pool</a>
+            <a href="anketa.html">Survey</a>
             <a href="contact.html">Contact</a>
-            <div class="search-container">
-                <form metod="post" autocomplete="on">
-                  <input type="text" placeholder="Search.." id="search">
-                  <button type="submit" ><i class="fa fa-search"></i></button>
-                </form>
-              </div>
+            
         </div>
-        <h2> 
-            Pool
-        </h2>
+        
         <p>
-            Please aswer this pool
+            Please aswer the following questions
         </p>
-        <form metod="post" autocomplete="on">
+        
+        <div class="forma">
+            
+        <form metod="post" autocomplete="on" action="contact.html">
+            
             <p>
                 <label>Date:
-                    <input type="date"/>
+                    <input class="input" type="date"/>
 
                 </label>
             </p>
             <p>
                 <label>Name:
-                    <input type="text" required />
+                    <input id="name" class="input" type="text" required />
 
                 </label>
             </p>
             <p>
                 <label>Last Name:
-                    <input type="text" required />
+                    <input id="lastname" class="input" type="text" required />
 
                 </label>
             </p>
             <p>
                 <label>Email:
-                    <input type="email" placeholder="name@mail.com"/>
+                    <input class="input" type="email" placeholder="name@mail.com"/>
 
                 </label>
             </p>
@@ -239,7 +257,7 @@
             </p>
             <p>
               <label>Please writte a comment!<br>
-                <textarea name="comments"
+                <textarea class="input" name="comments"
                  rows="5" cols="40">Comment..
                  </textarea>
 
@@ -247,9 +265,24 @@
             </p> 
         
             <p>
-                <input type="submit" value="Submit">
+                <input id="submit" onclick="message()" type="submit" value="Submit">
                 <input type="reset" value="Remove">
             </p>
+        
         </form>
+    
+    </div> 
+    <script>
+        function message(){
+            var n=document.getElementById("name");
+            var x=document.getElementById("lastname");
+            if(n.value.length==0 || x.value.length==0){
+                alert("Please enter required fields!")
+            }
+            else{
+            alert("Thank you for helpping us! Click ok to see our contact informations!")}
+        }
+    </script>
+    
         </body>
         </html>

@@ -55,7 +55,7 @@
     margin: 0;
   }
           .topnav a:hover, .dropdown:hover .dropbtn {
-             /* background-color:darkgreen;*/
+            background-color:#ddd;
               color: black;
           }
           .dropdown-content {
@@ -136,11 +136,57 @@
             margin-left:50px;
             
         }
+        /* za srchot*/
+        
+* {
+  box-sizing: border-box;
+}
+
+/*#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}*/
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+ 
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+.box{
+  margin-left: 20%;
+  border: 1px solid #ddd;
+  width: 50%;
+}
+#myInput{
+  margin-right: 20px;
+}
 </style>
 <body>
 
   <div class="header">
-    <h1 style="font-style:oblique; opacity:inherit; color: rgb(1, 161, 1);"> Vichi's diary</h1>
+    <h1 style="font-style:oblique; opacity:inherit; color: rgb(111, 116, 111);"> Vichi's diary</h1>
   </div>
   <div class="topnav">
     <a href="proekt.html">Home</a>
@@ -161,22 +207,86 @@
     <a href="contact.html">Contact</a>
     <div class="search-container">
         <form metod="post" autocomplete="on">
-          <input type="text" placeholder="Search.." id="search">
-          <button type="submit" ><i class="fa fa-search"></i></button>
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="myFunction()">
+          
         </form>
       </div>
 </div>
 <p> </p>
 <p>
     
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/bkWevngKTcw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <ul id="myUL">
+    <li>
+      <div class="box">
+      <a href="https://www.youtube.com/watch?v=egMWlD3fLJ8&t=136s"> Rock: Steppenwolf-Born To Be Wild </a>
+        <img src="born.jpg"  style="width:100%">
+      </div>
+    </li>
+<li>
+  <div class="box">
+  <a href="https://www.youtube.com/watch?v=1w7OgIMMRc4"> Rock: Guns N' Roses - Sweet Child O' Mine </a>
+    <img src="sweet.jpg"  style="width:100%">
+  </div>
+</li>
+<li>
+  <div class="box">
+  <a href="https://www.youtube.com/watch?v=Lo2qQmj0_h4"> Rock: AC/DC - You Shook Me All Night Long </a>
+    <img src="acdc.jpg"  style="width:100%">
+  </div>
+</li>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XrqrpMFxMo8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-    
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/fvQpnkIJ4ww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-  </p>
+<li>
+  <div class="box">
+  <a href="https://www.youtube.com/watch?v=E07s5ZYygMg"> Pop: Harry Styles - Watermelon Sugar </a>
+    <img src="hari.jpg"  style="width:100%">
+  </div>
+</li>
+
+<li>
+  <div class="box">
+  <a href="https://www.youtube.com/watch?v=2fXzLtAXevI"> Pop: Tose Proeski - Naj, naj </a>
+    <img src="tose.png"  style="width:100%">
+  </div>
+</li>
+
+<li>
+  <div class="box">
+  <a href="https://www.youtube.com/watch?fbclid=IwAR00UiPkdvD6VT9tV-cx9pe_cykY9VEE3cZOhDg2MfbjaHcod5DFRPA10a4&v=wnJ6LuUFpMo&feature=youtu.be"> Latino: J Balvin, Willy William - Mi Gente</a>
+    <img src="migente.jpg"  style="width:100%">
+  </div>
+</li>
+<li>
+  <div class="box">
+  <a href="https://www.youtube.com/watch?fbclid=IwAR2zTv3WHOKamFNjNlQfGZpUyJE9YVEmaypPiF0bEWLiuBm6QjiM3dg7umA&v=NUsoVlDFqZg&feature=youtu.be"> Latino: Enrique Iglesias - Bailando ft. Descemer Bueno, Gente De Zona </a>
+    <img src="bailando.jpg"  style="width:100%">
+  </div>
+</li>
+<li>
+  <div class="box">
+  <a href="https://www.youtube.com/watch?fbclid=IwAR2ZG80j1fB2tA5f1okf3ncD55oBhs9B4H4yPUJKnCDG7Emx9y0cla2Fc4w&v=QK8mJJJvaes&feature=youtu.be"> Hip Hop: MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ</a>
+    <img src="hiphop.jpg"  style="width:100%">
+  </div>
+</li>
+  
+  </ul>
+  <script>
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
 
     </body>
     </html>

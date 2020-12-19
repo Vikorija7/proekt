@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
     <head>
-        <meta charset = "utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Vichu's diary</title>
+        <meta charset="utf-8">
+        <title>Vichu's diary</title>  
+
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <style>
-              .header {
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <style type="text/css">
+          .header {
   background-image: url('header3.jpg');
   background-repeat: no-repeat;
   background-size: 100% 120px;
@@ -37,10 +41,12 @@
           }
           
           .topnav {
+           
               overflow: hidden;
-              /*background-color:rgb(64, 153, 104);*/
+              /*background-color:rgb(97, 99, 98);*/
           }
           .topnav a{
+      
               float: left;
               display: block;
               color: rgb(82, 79, 79);
@@ -63,13 +69,13 @@
     margin: 0;
   }
           .topnav a:hover, .dropdown:hover .dropbtn {
-             /* background-color:darkgreen;*/
+             background-color:#ddd;
               color: black;
           }
           .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(204, 204, 204);
+    background-color:rgb(204, 204, 204);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -136,174 +142,19 @@
               border: 1px solid #ccc;
           }
           }
-        
-        img {
-            display: block;
-            border:5px solid #555;
-            width:50%;
-            height:auto;
-            margin-left:auto;
-            margin-right:auto;
-        }
-        
-        
-        * {
-  box-sizing: border-box;
-}
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-.row {
-  margin: 8px -16px;
+            
+            /*ova nadolu e novo*/  
+ul{
+  list-style: none;
 }
 
-.row,
-.row > .column {
-  padding: 8px;
-}
-.column {
-  float: left;
-  width: 25%;
-}
-.column {
-  float: left;
-  width: 20%;
-}
-.content {
-  background-color: white;
-  padding: 10px;
-}
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-/*.button {
-  border: none;
-  outline: 0;
-  height: 30px;
-  padding: 8px;
-  color: white;
-  background-color:rgb(22, 22, 109);
-  text-align: center;
-  cursor: pointer;
-  width: 20%;
-}
-
-.button:hover {
-  background-color: #555;
-}*/
-
-img{
-  height: 320px;
-}
-/* ova e za lajkovite*/
-/*.column .content img{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    padding-bottom: 10px;
-}*/
-.column .content .voting{
-    position:relative;
-    /*border: 3px solid #303030;
-    border-radius: 4px;*/
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-}
-.column .content .voting input{
-    width: 50px;
-    border:none;
-    background:none;
-    color: #919191;
-    font-size:30px;
-    margin:0 10px;
-    pointer-events: none;
-}
-.column .content .voting button{
-    color:salmon;
-    background:none;
-    border:none;
-    font-size: 30px;
-    padding: 0 15px;
-    margin: 10px 0;
-    margin-left:20px;
-    cursor: pointer;
-}
-.column .content .voting button:active{
-    color:red;
-    transform: scale(1.2);
-}
-/*ova e za komentarot
-* {
-  margin: 0;
-  border: 0; 
-  outline: 0;
-  list-style: none; 
-  user-select: none;
-  }
-  .container {
-position: relative; 
-margin-top: 20px; 
-background: grey; 
-width: 250px; 
-height:80px; 
-padding: 20px 0; 
-text-align: center; 
-border-radius: 20px; 
-overflow: hidden; 
-z-index: 2;
-margin-left: 38%;
-}
  
-.container input, container button { 
-height: 20px; 
-width: 90%; 
-border-radius: 50px; 
-font-size: 15px;
-}*/
-.container input {
-/*border: 2px solid grey; 
-padding-left: 12px;
-margin-bottom: 12px; */
-transition: .4s;
-}
+ul li { padding: 15px;
+color: blanchedalmond;
+text-align: center; }
  
-.container input:focus { border: 2px solid #00bcd4; }
- 
-.container button {
-Cursor: pointer; 
-/*background:solid white; 
-letter-spacing: 1px; */
-transition: .4s;
-/*font-family: Arial, Helvetica, sans-serif;*/
-
-}
- 
-/*.container button:hover { background: #FF8427; }*/
- 
-ul {
-/*position: absolute; 
-width: 250px; 
-height: fit-content; 
-background: grey; 
-margin-top: 40px; 
-padding-top: 20px; 
-border-radius: 20px; */
-transition: .4s;
-/*margin-left: 36%;*/
-}
- 
-ul li { padding: 15px; }
- 
-ul li span { display: flex; }
+ul li span { display: flex;
+text-align: center; }
  
 ul li span p:nth-child(1) { 
 text-transform: uppercase; 
@@ -311,6 +162,7 @@ font-size: 20px;
 font-weight: 500; 
 color: #ffffff; 
 margin-right: 10px;
+
 }
  
 ul li span p:nth-child(2) { 
@@ -325,318 +177,225 @@ color: #f5f5f5;
 font-size: 19px; 
 font-weight: 400; 
 padding-top: 5px;
-}*/
-form{
-    padding: auto;
-    
 }
+/*.pom{
+  margin-left: 10px;
 
-
+ 
+  
+}*/
+#com1, #com2, #com3, #com4, #com5{
+  margin-left: 10px;
+}
+.center {
+        background: rgba(0, 0, 0,0.8);
+                text-align: center;
+                margin-top: 30px;
+                margin-right: 220px;
+                margin-left: 220px;
+                border-radius: 5px;
+                height: max-content;
+      }
+      .center img {
+        margin-right: 1em;
+                margin-left: 0.5em;
+                width: 300px;
+                height: 350px;
+                border-radius: 5px;
+                margin-top: 20px;
+      }
+      /* za lajkovite */
+      .like{
+        color: #778899;
+        margin-left: 650px;
+        font-size: 1em;
+     
+      }
+      #counter1,#counter2,#counter3,#counter4, #counter5, #counter6, #counter7, #counter8, #counter9, #counter10{
+        color:#778899 ;
+      }
+      .like {
+        display: block;
+        margin-top: 30px;
+        margin-left: 33%;
+        margin-right: auto;
+        width: 5%;
+      }
+      .fa-heart {
+        color: #778899;
+        
+      }
+      .fa-heart:hover{
+        color: white;
+      }
+       
+      .komentar{
+      /*width: 200px;*/
+        background: none;
+        border: none;
+        border-bottom:#778899 solid 1px ;
+        color: #778899;
+    
+        
+      
+      }
+      .pom{
+                color:  #778899;
+                background: none;
+                border: none;
+               
+            }
+            .pom:hover{
+              color: white;
+            }
+     
     </style>
-</head>
-<body>
-
-    <div class="header">
-        <h1 style="font-style:oblique; opacity:inherit; color:  rgb(1, 161, 1);"> Vichi's diary</h1>
-      </div>
-
-    <div class="topnav">
-        <a href="proekt.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="galery.html">Galery</a>
-        <div class="dropdown">
-            <button class="dropbtn">Favourites
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-            <a href="music.html">Music</a>
-            <a href="food.html">Food</a>
-            <a href="movies.html">Movies</a>
+   
+    </head>
+    <body onload="load()">
+     
+        <div class="header">
+            <h1 style="font-style:oblique; opacity:inherit; color:  rgb(111, 116, 111);"> Vichi's diary</h1>
           </div>
-        </div>
-        <a href="blog.html">Blog</a>
-        <a href="anketa.html">Pool</a>
-        <a href="contact.html">Contact</a>
-        <div class="search-container">
-            <form metod="post" autocomplete="on">
-              <input type="text" placeholder="Search.." id="search">
-              <button type="submit" ><i class="fa fa-search"></i></button>
-            </form>
-          </div>
-    </div>
-    <div class="row">
-        <div class="column">
-          <div class="content">
-            <img src="Ben.jpg" alt="Ben" style="width:100%">
-            <p>
-              <div class="voting">
-                <button id="likebtn1">
-                    <i class="fa fa-heart"></i>
+    
+        <div class="topnav">
+            <a href="proekt.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="galery.html">Galery</a>
+            <div class="dropdown">
+                <button class="dropbtn">Favourites
+                  <i class="fa fa-caret-down"></i>
                 </button>
-                <input type="number" id="input11" value=0 name="">
-                
-                <button id="dislikebtn1">
-                    <i class="fas fa-heart-broken icon"></i>
-                </button>
-                <input type="number" id="input21" value=0 name="">
-                
-                        </div>
-              </p>
-              <div class="container">
-                <input type="text" placeholder="Enter your name" id="name">
-                <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment"> 
-                <button onclick="add()">Comment</button>
-                </div>
-                <ul class="list"> </ul>
-            </div>
-          </div>
-        <div class="column">
-            <div class="content">
-              <img src="chupinja.jpeg" alt="Friends" style="width:100%">
-              <p>
-                <div class="voting">
-                  <button id="likebtn2">
-                      <i class="fa fa-heart"></i>
-                  </button>
-                  <input type="number" id="input12" value=0 name="">
-                  
-                  <button id="dislikebtn2">
-                      <i class="fas fa-heart-broken icon"></i>
-                  </button>
-                  <input type="number" id="input22" value=0 name="">
-                  
-                          </div>
-                </p>
-                
-                <div class="container">
-                  <input type="text" placeholder="Enter your name" id="name1">
-                  <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment1"> 
-                  <button onclick="add1()">Comment</button>
-                  </div>
-                  <ul class="list1"> </ul>
-                  
+                <div class="dropdown-content">
+                <a href="music.html">Music</a>
+                <a href="food.html">Food</a>
+                <a href="movies.html">Movies</a>
               </div>
             </div>
-           
-          <div class="column">
-            <div class="content">
-              <img src="macici1.jpg" alt="Mac" style="width:100%">
-              <p>
-                <div class="voting">
-                  <button id="likebtn3">
-                      <i class="fa fa-heart"></i>
-                  </button>
-                  <input type="number" id="input13" value=0 name="">
-                  
-                  <button id="dislikebtn3">
-                      <i class="fas fa-heart-broken icon"></i>
-                  </button>
-                  <input type="number" id="input23" value=0 name="">
-                  
-                          </div>
-                </p>
-                <div class="container">
-                  <input type="text" placeholder="Enter your name" id="name2">
-                  <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment2"> 
-                  <button onclick="add2()">Comment</button>
-                  </div>
-                  <ul class="list2"> </ul>
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="krusevo.jpg" alt="Krusevo" style="width:100%">
-              <p>
-                <div class="voting">
-                  <button id="likebtn4">
-                      <i class="fa fa-heart"></i>
-                  </button>
-                  <input type="number" id="input14" value=0 name="">
-                  
-                  <button id="dislikebtn4">
-                      <i class="fas fa-heart-broken icon"></i>
-                  </button>
-                  <input type="number" id="input24" value=0 name="">
-                  
-                          </div>
-                </p>
-                <div class="container">
-                  <input type="text" placeholder="Enter your name" id="name3">
-                  <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment3"> 
-                  <button onclick="add3()">Comment</button>
-                  </div>
-                  <ul class="list3"> </ul>
-                
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="mac.jpg" alt="Mac" style="width:100%">
-              <p>
-                <div class="voting">
-                  <button id="likebtn5">
-                      <i class="fa fa-heart"></i>
-                  </button>
-                  <input type="number" id="input15" value=0 name="">
-                  
-                  <button id="dislikebtn5">
-                      <i class="fas fa-heart-broken icon"></i>
-                  </button>
-                  <input type="number" id="input25" value=0 name="">
-                  
-                          </div>
-                </p>
-                <div class="container">
-                  <input type="text" placeholder="Enter your name" id="name4">
-                  <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment4"> 
-                  <button onclick="add4()">Comment</button>
-                  </div>
-                  <ul class="list4"> </ul>
-            </div>
-          </div>
+            <a href="blog.html">Blog</a>
+            <a href="anketa.html">Survey</a>
+            <a href="contact.html">Contact</a>
+            
         </div>
-        <div class="row">
-          <div class="column">
-            <div class="content">
-              <img src="picture.jpg" alt="picture" style="width:100%">
-              <p>
-                <div class="voting">
-                  <button id="likebtn6">
-                      <i class="fa fa-heart"></i>
-                  </button>
-                  <input type="number" id="input16" value=0 name="">
-                  
-                  <button id="dislikebtn6">
-                      <i class="fas fa-heart-broken icon"></i>
-                  </button>
-                  <input type="number" id="input26" value=0 name="">
-                  
-                          </div>
-                </p>
-                <div class="container">
-                  <input type="text" placeholder="Enter your name" id="name5">
-                  <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment5"> 
-                  <button onclick="add5()">Comment</button>
-                  </div>
-                  <ul class="list5">  </ul>
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="drive.jpeg" alt="drive" style="width:100%">
-              <p>
-                <div class="voting">
-                  <button id="likebtn7">
-                      <i class="fa fa-heart"></i>
-                  </button>
-                  <input type="number" id="input17" value=0 name="">
-                  
-                  <button id="dislikebtn7">
-                      <i class="fas fa-heart-broken icon"></i>
-                  </button>
-                  <input type="number" id="input27" value=0 name="">
-                  
-                          </div>
-                </p>
-                <div class="container">
-                  <input type="text" placeholder="Enter your name" id="name6">
-                  <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment6"> 
-                  <button onclick="add6()">Comment</button>
-                  </div>
-                  <ul class="list6"> </ul>
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="vikii.jpeg" alt="Me" style="width:100%">
-              <p>
-                <div class="voting">
-                  <button id="likebtn8">
-                      <i class="fa fa-heart"></i>
-                  </button>
-                  <input type="number" id="input18" value=0 name="">
-                  
-                  <button id="dislikebtn8">
-                      <i class="fas fa-heart-broken icon"></i>
-                  </button>
-                  <input type="number" id="input28" value=0 name="">
-                  
-                          </div>
-                        </p>
-                          <div class="container">
-                            <input type="text" placeholder="Enter your name" id="name7">
-                            <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment7"> 
-                            <button onclick="add7()">Comment</button>
-                            </div>
-                            <ul class="list7"> </ul>
-                
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="woods.jpeg" alt="Nature" style="width:100%">
-              <p>
-                <div class="voting">
-                  <button id="likebtn9">
-                      <i class="fa fa-heart"></i>
-                  </button>
-                  <input type="number" id="input19" value=0 name="">
-                  
-                  <button id="dislikebtn9">
-                      <i class="fas fa-heart-broken icon"></i>
-                  </button>
-                  <input type="number" id="input29" value=0 name="">
-                  
-                          </div>
-                </p>
-                <div class="container">
-                  <input type="text" placeholder="Enter your name" id="name8">
-                  <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment8"> 
-                  <button onclick="add8()">Comment</button>
-                  </div>
-                  <ul class="list8"> </ul>
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="friends.jpeg" alt="Friends" id="friends" style="width:100%">
-              <p>
-                <div class="voting">
-                  <button id="likebtn10">
-                      <i class="fa fa-heart"></i>
-                  </button>
-                  <input type="number" id="input110" value=0 name="">
-                  
-                  <button id="dislikebtn10">
-                      <i class="fas fa-heart-broken icon"></i>
-                  </button>
-                  <input type="number" id="input210" value=0 name="">
-                  
-                          </div>
-                </p>
-                <div class="container">
-                  <input type="text" placeholder="Enter your name" id="name9">
-                  <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment9"> 
-                  <button onclick="add9()">Comment</button>
-                  </div>
-                  <ul class="list9"> </ul>
-            </div>
-          </div>
-          </div>
-        
-          <script src="java.js" ></script>
-          <script src="komentariiii.js"></script>
-          <script src="kom2.js"></script>
-          <script src="kom3.js"></script>
-          <script src="kom4.js"></script>
-          <script src="kom5.js"></script>
-          <script src="kom6.js"></script>
-          <script src="kom7.js"></script>
-          <script src="kom8.js"></script>
-          <script src="kom9.js"></script>
-          <script src="kom10.js"></script>
-          
-          
+        <p><br></p>
 
-</body>
-</html>
+        <div class="center">
+         <img src="Ben.jpg" alt="Cat" > <br> 
+         <div class="like">
+          <p><i onclick="incerementLikes1(this)" class="fa fa-heart" id="like1"></i>
+             <label id="counter1"></label></p></div>
+         <input class="komentar" id = "com1" type="text" placeholder="Enter a comment"/>
+            <button class="pom" id="postbtn1">Comment</button>
+                
+                <ul id="komentari1"></ul> 
+        </div>
+          
+        <div class="center">
+         <img src="chupinja.jpeg" alt="Cat" > <br> 
+         <div class="like">
+          <p><i onclick="incerementLikes2(this)" class="fa fa-heart" id="like2"></i>
+             <label id="counter2"></label></p></div>
+         <input class="komentar" id = "com2" type="text" placeholder="Enter a comment"/>
+            <button class="pom" id="postbtn2">Comment</button>
+                
+                <ul id="komentari2"></ul>
+        </div>
+
+        <div class="center">
+                 <img src="macici1.jpg" alt="Cat"><br>
+                 <div class="like">
+                  <p><i onclick="incerementLikes3(this)" class="fa fa-heart" id="like3"></i>
+                     <label id="counter3"></label></p></div>
+                 <input class="komentar"id = "com3" type="text" placeholder="Enter a comment"/>
+            <button class="pom" id="postbtn3">Comment</button>
+            
+            <ul id="komentari3"></ul>
+        </div>
+        
+        <div class="center">
+        <img src="krusevo.jpg" alt="Coctails"><br>
+        <div class="like">
+          <p><i onclick="incerementLikes4(this)" class="fa fa-heart" id="like4"></i>
+             <label id="counter4"></label></p></div>
+        <input class="komentar" id = "com4" type="text" placeholder="Enter a comment"/>
+            <button class="pom" id="postbtn4">Comment</button>
+            
+            <ul id="komentari4"></ul>
+        </div>
+
+        <div class="center">
+        <img src="mac.jpg" alt="Summer" ><br>
+        <div class="like">
+          <p><i onclick="incerementLikes5(this)" class="fa fa-heart" id="like5"></i>
+             <label id="counter5"></label></p></div>
+        <input class="komentar" id = "com5" type="text" placeholder="Enter a comment"/>
+            <button class="pom" id="postbtn5">Comment</button>
+           
+            <ul id="komentari5"></ul>
+        </div>
+
+        <div class="center">
+          <img src="picture.jpg" alt="Coctails"><br>
+          <div class="like">
+            <p><i onclick="incerementLikes6(this)" class="fa fa-heart" id="like6"></i>
+               <label id="counter6"></label></p></div>
+          <input class="komentar" id = "com6" type="text" placeholder="Enter a comment"/>
+              <button class="pom" id="postbtn6">Comment</button>
+              
+              <ul id="komentari6"></ul>
+          </div>
+
+          <div class="center">
+            <img src="drive.jpeg" alt="Coctails"><br>
+            <div class="like">
+            <p><i onclick="incerementLikes7(this)" class="fa fa-heart" id="like7"></i>
+              <label id="counter7"></label></p></div>
+            <input class="komentar" id = "com7" type="text" placeholder="Enter a comment"/>
+                <button class="pom" id="postbtn7">Comment</button>
+                
+                <ul id="komentari7"></ul>
+            </div>
+
+            <div class="center">
+              <img src="vikii.jpeg" alt="Coctails"><br>
+              <div class="like">
+                <p><i onclick="incerementLikes8(this)" class="fa fa-heart" id="like8"></i>
+                  <label id="counter8"></label></p></div>
+              <input class="komentar" id = "com8" type="text" placeholder="Enter a comment"/>
+                  <button class="pom" id="postbtn8">Comment</button>
+                  
+                  <ul id="komentari8"></ul>
+              </div>
+
+              <div class="center">
+                <img src="woods.jpeg" alt="Coctails"><br>
+                <div class="like">
+                  <p><i onclick="incerementLikes9(this)" class="fa fa-heart" id="like9"></i>
+                    <label id="counter9"></label></p></div>
+                <input class="komentar" id = "com9" type="text" placeholder="Enter a comment"/>
+                    <button class="pom" id="postbtn9">Comment</button>
+                    
+                    <ul id="komentari9"></ul>
+                </div>
+
+                <div class="center">
+                  <img src="friends.jpeg" alt="Coctails"><br>
+                  <div class="like">
+                    <p><i onclick="incerementLikes10(this)" class="fa fa-heart" id="like10"></i>
+                      <label id="counter10"></label></p></div>
+                  <input class="komentar" id = "com10" type="text" placeholder="Enter a comment"/>
+                      <button class="pom" id="postbtn10">Comment</button>
+                      
+                      <ul id="komentari10"></ul>
+                  </div>
+        
+            <script src="counter.js"></script>
+            
+            <script src="share.js"> </script>
+            <script src="kom.js"> </script>
+            <script src="likes.js"> </script>
+           
+           
+
+    </body> 
+    </html>

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Vichu's diary</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
              .header {
   background-image: url('header3.jpg');
@@ -70,7 +71,7 @@
     margin: 0;
   }
           .topnav a:hover, .dropdown:hover .dropbtn {
-             /* background-color:darkgreen;*/
+            background-color:#ddd;
               color: black;
           }
           .dropdown-content {
@@ -183,23 +184,34 @@
   text-align: center;
   cursor: pointer;
   width: 100%;
+  
 }
 .button:hover {
   background-color: #555;
 }
 .title {
   color: grey;
+font-style: italic;
+font-size: 15px;
 }
 img{
   height: 400px;
 }
-  
+  /*ova e za da go podvlechi zborot*/
+  .highlight
+            {
+                background: yellow;
+                font-weight: bold;
+            }
+            #search{
+              margin-right: 20px;
+            }
     </style>
 </head>
 <body>
 
   <div class="header">
-    <h1 style="font-style:oblique; opacity:inherit; color: rgb(1, 161, 1);"> Vichi's diary</h1>
+    <h1 style="font-style:oblique; opacity:inherit; color: rgb(111, 116, 111);"> Vichi's diary</h1>
   </div>
     
 
@@ -218,12 +230,12 @@ img{
         </div>
       </div>
         <a href="blog.html">Blog</a>
-        <a href="anketa.html">Poll</a>
+        <a href="anketa.html">Survey</a>
         <a href="contact.html">Contact</a>
         <div class="search-container">
             <form metod="post" autocomplete="on">
-              <input type="text" placeholder="Search.." id="search">
-              <button type="submit" ><i class="fa fa-search"></i></button>
+              <input type="text" placeholder="Search.." id="search" class="search">
+              
             </form>
           </div>
     </div>
@@ -235,7 +247,7 @@ img{
             <img  src="message in a bottle.jpg" alt="Message in a bottle" style="width:100%">
               <div class="container">
               <h2>Message in a bottle</h2>
-              <p class="title">1999 ‧ Romance/Drama ‧ 2h 11m</p>
+              <h4 class="title">1999 ‧ Romance/Drama ‧ 2h 11m</h4>
               <p>A woman finds a romantic letter in a bottle washed ashore and tracks down its author, a widower. Gradually, she falls in love with him when she learns that he has been writing to his deceased wife</p>
               <p class="title">Story by: Nicholas Sparks</p>
               <p>
@@ -254,7 +266,7 @@ img{
               <img src="Rocky Balboa.jpg" alt="Rocky Balboa" style="width:100%">
                 <div class="container">
                 <h2>Rocky Balboa</h2>
-                <p class="title">2006 ‧ Sport/Romance ‧ 1h 42m</p>
+                <h4 class="title">2006 ‧ Sport/Romance ‧ 1h 42m</h4>
                 <p>A retired Rocky Balboa wins against reigning champion Mason Dixon in a computer simulation of a fight. Enraged by this, Mason challenges Rocky to a 10-round exhibition bout.</p>
                 <p> </p> <br> 
                 <p>
@@ -273,7 +285,7 @@ img{
               <img src="lassie.jpg" alt="Lassie" style="width:100%">
                 <div class="container">
                 <h2>Lassiea</h2>
-                <p class="title">1994 ‧ Family/Drama ‧ 1h 35m</p>
+                <h4 class="title">1994 ‧ Family/Drama ‧ 1h 35m</h4>
                 <p>Teenager Matt feels lost in his new surroundings after his family relocates to the country side. Lassie, a homeless dog, becomes a part of their lives.</p>
                 <p> </p> <br> <br>
                 <p>
@@ -292,7 +304,7 @@ img{
               <img src="breakfast at Tiffany's.jpg" alt="Breakfast at Tiffany's" style="width:100%">
                 <div class="container">
                 <h2>Breakfast at Tiffany's</h2>
-                <p class="title">1961 ‧ Romance/Drama ‧ 1h 55m</p>
+                <h4 class="title">1961 ‧ Romance/Drama ‧ 1h 55m</h4>
                 <p>Paul is a struggling writer who recently moves into a new apartment in New York. When he meets Holly, an eccentric but beautiful socialite, he hopelessly falls in love with her.</p>
                 <p> </p> <br>
                 <p>
@@ -314,7 +326,7 @@ img{
               <img src="escape plan.jpg" alt="Escape Plan" style="width:100%">
                 <div class="container">
                 <h2>Escape Plan</h2>
-                <p class="title">2013 ‧ Action/Thriller ‧ 1h 56m</p>
+                <h4 class="title">2013 ‧ Action/Thriller ‧ 1h 56m</h4>
                 <p>Ray, an expert in security systems, is framed for a crime and sent to a high-tech prison. However, he uses all his knowledge and special skills with a little inside help to escape the facility.</p>
                 
                 <p>
@@ -333,7 +345,7 @@ img{
               <img src="before.jpg" alt="Before sunrise" style="width:100%">
                 <div class="container">
                 <h2>Before Sunrise</h2>
-                <p class="title">1995 ‧ Romance/Drama ‧ 1h 45m</p>
+                <h4 class="title">1995 ‧ Romance/Drama ‧ 1h 45m</h4>
                 <p>While travelling on a train in Europe, Jesse, an American man, meets Celine, a French woman. On his last day in Europe before returning to the US, he decides to spend his remaining hours with her.</p>
                 
                 <p>
@@ -352,7 +364,7 @@ img{
               <img src="the longest ride.jpg" alt="The Longest Ride" style="width:100%">
                 <div class="container">
                 <h2>The Longest Ride</h2>
-                <p class="title">2015 ‧ Romance/Drama ‧ 2h 19m</p>
+                <h4 class="title">2015 ‧ Romance/Drama ‧ 2h 19m</h4>
                 <p>The spark between Luke and Sophia fades away owing to their conflicting career paths. Subsequently, an older man, Ira, tries to show them the rewards of resolving relationship barriers.</p>
                 
                 <p>
@@ -371,7 +383,7 @@ img{
               <img src="home alone.jpg" alt="Home Alone" style="width:100%">
                 <div class="container">
                 <h2>Home Alone</h2>
-                <p class="title">1990 ‧ Comedy/Family ‧ 1h 43m</p>
+                <h4 class="title">1990 ‧ Comedy/Family ‧ 1h 43m</h4>
                 <p>Eight-year-old Kevin is accidentally left behind when his family leaves for France. At first, he is happy to be in charge, but when thieves try to break into his home, he tries to put up a fight.</p>
                 
                 <p>
@@ -386,5 +398,9 @@ img{
           </div>
       
       </div>
+      <script src="highlight1.js" ></script>
+      
+
+></script>
 </body>
 </html>

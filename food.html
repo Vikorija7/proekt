@@ -57,7 +57,7 @@
     margin: 0;
   }
           .topnav a:hover, .dropdown:hover .dropbtn {
-             /* background-color:darkgreen;*/
+            background-color:#ddd;
               color: black;
           }
           .dropdown-content {
@@ -172,12 +172,17 @@
 img{
     height: 420px;
 }
+#submit{
+  background-color: grey;
+  border-radius: 5px;
+  width: 100%;
+}
     </style>
 </head>
 <body>
 
   <div class="header">
-    <h1 style="font-style:oblique; opacity:inherit; color: rgb(1, 161, 1);"> Vichi's diary</h1>
+    <h1 style="font-style:oblique; opacity:inherit; color: rgb(111, 116, 111);"> Vichi's diary</h1>
   </div>
   <div class="topnav">
     <a href="proekt.html">Home</a>
@@ -194,13 +199,12 @@ img{
     </div>
   </div>
     <a href="blog.html">Blog</a>
-    <a href="anketa.html">Poll</a>
+    <a href="anketa.html">Survey</a>
     <a href="contact.html">Contact</a>
     <div class="search-container">
-        <form metod="post" autocomplete="on">
-          <input type="text" placeholder="Search.." id="search">
-          <button type="submit" ><i class="fa fa-search"></i></button>
-        </form>
+      <form metod="post"  action="slideshow.html">
+        <input id="submit" type="submit" value="Click to see the gallery of my favourite restaurants">
+      </form>
       </div>
 </div>
 
@@ -252,8 +256,6 @@ img{
         </a>
       </div>
       </div>
-  
-
 
 </body>
 </html>
